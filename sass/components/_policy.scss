@@ -1,0 +1,51 @@
+.form__policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  min-width: 400px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.policy__link {
+  color: $accent-color;
+  text-decoration: underline;
+  margin-left: 2px;
+}
+
+.policy__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.policy__check {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  fill: $primari-white-color;
+  align-items: center;
+  justify-content: center;
+  margin-right: 7px;
+  border: 2px solid $title-text-color;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: border $transition, background-color $transition;
+
+  .policy__checkbox:focus + &,
+  .policy__checkbox:hover + & {
+    border-color: $accent-color;
+  }
+
+  .policy__checkbox:checked + & {
+    background-color: $accent-color;
+
+    border: 2px solid $accent-color;
+  }
+}

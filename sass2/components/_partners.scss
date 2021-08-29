@@ -1,0 +1,43 @@
+.partners {
+  display: flex;
+}
+.partners__card {
+  margin-right: 30px;
+
+  &:last-child {
+    margin: 0px;
+  }
+}
+
+.partners__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  transition: border-color $transition;
+
+  &:focus,
+  &:hover {
+    border-color: $accent-color;
+  }
+}
+
+.partners__logo {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $fill-icon-color;
+
+  .partners__link:focus &,
+  .partners__link:hover & {
+    fill: $accent-color;
+  }
+}

@@ -1,0 +1,39 @@
+.auth {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.auth__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.auth__link {
+  display: flex;
+  align-items: center;
+  color: $primari-text-color;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color $transition;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  padding: 0;
+}
