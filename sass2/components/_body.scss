@@ -16,6 +16,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+html,
+body {
+  @media screen and (min-width: 320px) {
+    overflow-x: hidden;
+  }
+}
+
 ul {
   list-style: none;
   margin-top: 0;

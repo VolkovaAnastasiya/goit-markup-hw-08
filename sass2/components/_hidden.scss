@@ -1,5 +1,5 @@
 .hidden {
-  display: flex;
+  // display: flex;
   justify-content: center;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -8,4 +8,12 @@
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

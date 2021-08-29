@@ -3,20 +3,30 @@
   background-color: $button-background-color;
 }
 .team__cards {
-  display: flex;
+  // display: flex;
+  width: 100%;
 }
 
 .team__item {
-  width: calc((100%-60px) / 4);
-  margin-right: 30px;
   margin-bottom: 30px;
 
-  &:last-child {
-    margin-right: 0px;
-  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-60px) / 4);
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0px;
+    }
 
-  &:nth-last-child(-n + 4) {
-    margin-bottom: 0px;
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.team__img {
+  @media screen and (min-width: 480px) {
+    display: block;
+    width: 100%;
   }
 }
 
@@ -84,4 +94,12 @@
   .set__link:focus & {
     fill: $primari-white-color;
   }
+}
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }

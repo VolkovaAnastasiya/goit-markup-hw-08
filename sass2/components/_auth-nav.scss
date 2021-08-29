@@ -1,11 +1,19 @@
 .auth {
-  display: flex;
+  // display: flex;
   align-items: center;
   margin-left: auto;
+  @media screen and (min-width: 480px) {
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .auth__item {
-  display: flex;
+  // display: flex;
 
   &:not(:last-child) {
     margin-right: 50px;
@@ -13,7 +21,7 @@
 }
 
 .auth__link {
-  display: flex;
+  // display: flex;
   align-items: center;
   color: $primari-text-color;
 

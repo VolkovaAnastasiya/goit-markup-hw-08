@@ -1,24 +1,24 @@
-.button {
-  background-color: $button-background-color;
+// .button {
+//   background-color: $button-background-color;
 
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 0.03em;
-  cursor: pointer;
+//   font-family: inherit;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.6;
+//   letter-spacing: 0.03em;
+//   cursor: pointer;
 
-  border: transparent;
-  border-radius: 4px;
-  padding: 6px 22px;
-  transition: color $transition, background-color $transition,
-    box-shadow $transition;
+//   border: transparent;
+//   border-radius: 4px;
+//   padding: 6px 22px;
+//   transition: color $transition, background-color $transition,
+//     box-shadow $transition;
 
-  &:hover,
-  &:focus {
-    color: $primari-white-color;
-    background-color: $accent-color;
+//   &:hover,
+//   &:focus {
+//     color: $primari-white-color;
+//     background-color: $accent-color;
 
-    box-shadow: $shadow;
-  }
-}
+//     box-shadow: $shadow;
+//   }
+// }

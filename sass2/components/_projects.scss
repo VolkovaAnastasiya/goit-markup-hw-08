@@ -1,5 +1,5 @@
 .projects {
-  display: flex;
+  // display: flex;
   flex-wrap: wrap;
   margin: -15px;
 }
@@ -76,4 +76,12 @@
   .projects__link:focus & {
     transform: translate(0%);
   }
+}
+@media screen and (min-width: 480px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
 }
