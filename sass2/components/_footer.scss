@@ -7,14 +7,29 @@
 
   background-color: $hero-background-color;
 }
+
+.container-tablet {
+  // @media screen and (min-width: 768px), (max-width: 1199px) {
+  //   display: flex;
+  // }
+  @media screen and (min-width: 480px) {
+  }
+}
 .footer__container {
   display: flex;
   padding-top: 0;
   padding-bottom: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     flex-direction: column;
     justify-content: center;
+  }
+  & .container-tablet {
+    @media screen and (min-width: 768px), (max-width: 1199px) {
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -28,21 +43,26 @@
   margin-bottom: 20px;
   margin-right: 0px;
 
+  @media screen and (min-width: 1200px) {
+  }
   @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
   }
-
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .footer-adress {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    margin-right: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-left: auto;
 
     margin-right: auto;

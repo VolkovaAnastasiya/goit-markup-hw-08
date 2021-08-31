@@ -1,16 +1,33 @@
 .mail {
-  // display: flex;
   flex-direction: column;
-  margin-left: auto;
+
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 .mail__box {
-  // display: flex;
+  display: flex;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .mail__input {
-  width: 358px;
   padding: 15px 16px;
-  margin-right: 12px;
+  margin: 0 0 20px 0;
+  margin-left: auto;
+  margin-right: auto;
   outline: none;
   caret-color: $title-text-color;
 
@@ -25,6 +42,20 @@
   border-radius: 4px;
   background-color: $hero-background-color;
   color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+  }
 }
 
 .mail__submit {
@@ -32,6 +63,7 @@
   align-items: center;
   text-align: center;
   padding: 10px 29px;
+  width: 200px;
   height: 50px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -53,6 +85,11 @@
   &:hover {
     background-color: $hero-button-focus-color;
   }
+
+  @media screen and (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 .mail__icon {
   width: 24px;
@@ -69,6 +106,11 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 @media screen and (min-width: 480px) {
 }

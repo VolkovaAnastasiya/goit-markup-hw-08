@@ -212,7 +212,12 @@
             <h2 class="section__title">Наша команда</h2>
             <ul class="team__cards">
                 <li class="team__item">
-                    <img  class="team__img" src="./image/фото1.jpg" alt="Улыбчивий мужчина в очках" width="270">
+                    <img  class="team__img" 
+                    srcset="./image/img1.jpg 1x, 
+                            ./image/img1@2x.jpg 2x, 
+                            ./image/img1@3x.jpg 3x"
+                    src="./image/img1.jpg" 
+                    alt="Улыбчивий мужчина в очках" width="270">
                     <div class="team__border team__title">
                         <h3 class="title__name">Игорь Демьяненко</h3>
                         <p class="title__text">Product Designer</p>
@@ -250,7 +255,13 @@
     
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./image/фото2.jpg" alt="Светловолосая девушка" width="270">
+                    <img class="team__img" 
+                    srcset="./image/img2.jpg 1x, 
+                            ./image/img2@2x.jpg 2x, 
+                            ./image/img2@3x.jpg 3x"
+                    src="./image/img2.jpg" 
+                    alt="Светловолосая девушка" 
+                    width="270">
                     <div class="team__border team__title">
                         <h3 class="title__name">Ольга Репина</h3>
                         <p class="title__text">Frontend Developer</p>
@@ -288,7 +299,13 @@
     
                 </li>
                 <li class="team__item">
-                    <img class="team__img" src="./image/фото3.jpg" alt="Улыбчивый парень в рубашке" width="270">
+                    <img class="team__img" 
+                    srcset="./image/img3.jpg 1x, 
+                            ./image/img3@2x.jpg 2x, 
+                            ./image/img3@3x.jpg 3x"
+                    src="./image/img3.jpg" 
+                    alt="Улыбчивый парень в рубашке" 
+                    width="270">
                     <div class="team__border team__title">
                         <h3 class="title__name">Николай Тарасов</h3>
                         <p class="title__text">Marketing</p>
@@ -326,7 +343,13 @@
                 </li>
     
                 <li class="team__item">
-                    <img class="team__img" src="./image/фото4.jpg" alt="Увереный в себе мужчина" width="270">
+                    <img class="team__img"
+                    srcset="./image/img4.jpg 1x, 
+                            ./image/img4@2x.jpg 2x, 
+                            ./image/img4@3x.jpg 3x" 
+                    src="./image/img4.jpg" 
+                    alt="Увереный в себе мужчина" 
+                    width="270">
                     <div class="team__border team__title">
                         <h3 class="title__name">Михаил Ермаков</h3>
                         <p class="title__text">UI Designer</p>
@@ -419,52 +442,54 @@
 
     <footer class="footer ">
         <div class="footer__container  container">
-            <div class="footer-adress ">
-                <a class="footer__logo logo" href="/"> <span class="logo__web">Web</span><span
-                        class="logo__studio">Studio</span></a>
-                <address class="address-footer">
-                    <ul class="footer-item">
-                        <li class="footer__address">г. Киев, пр-т Леси Украинки, 26</li>
-                        <li class="footer__address"><a href="mailto:info@devstudio.com"
-                                class="footer__nav">info@example.com</a></li>
-                        <li class="footer__address"><a href="tel:+380991111111" class="footer__nav">+38 099 111 11 11</a>
+            <div class="container-tablet">
+                <div class="footer-adress ">
+                    <a class="footer__logo logo" href="/"> <span class="logo__web">Web</span><span
+                            class="logo__studio">Studio</span></a>
+                    <address class="address-footer">
+                        <ul class="footer-item">
+                            <li class="footer__address">г. Киев, пр-т Леси Украинки, 26</li>
+                            <li class="footer__address"><a href="mailto:info@devstudio.com" class="footer__nav">info@example.com</a>
+                            </li>
+                            <li class="footer__address"><a href="tel:+380991111111" class="footer__nav">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                
+                <div class="box ">
+                    <p class="box__title">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="box__list">
+                        <li class="list__item">
+                            <a href="" class="list__link" aria-label="">
+                                <svg class="list__icon">
+                                    <use href="./image/icons.svg#icon-instagram-2"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="" class="list__link" aria-label="">
+                                <svg class="list__icon">
+                                    <use href="./image/icons.svg#icon-twitter-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="" class="list__link" aria-label="">
+                                <svg class="list__icon">
+                                    <use href="./image/icons.svg#icon-facebook-1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="" class="list__link" aria-label="">
+                                <svg class="list__icon">
+                                    <use href="./image/icons.svg#set__iconedin-1"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-
-            <div class="box ">
-                <p class="box__title">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="box__list">
-                    <li class="list__item">
-                        <a href="" class="list__link" aria-label="">
-                            <svg class="list__icon">
-                                <use href="./image/icons.svg#icon-instagram-2"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="" class="list__link" aria-label="">
-                            <svg class="list__icon">
-                                <use href="./image/icons.svg#icon-twitter-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="" class="list__link" aria-label="">
-                            <svg class="list__icon">
-                                <use href="./image/icons.svg#icon-facebook-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list__item">
-                        <a href="" class="list__link" aria-label="">
-                            <svg class="list__icon">
-                                <use href="./image/icons.svg#set__iconedin-1"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <label class="mail" name="footer-mail">
                 <span class="mail__label">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>

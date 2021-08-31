@@ -3,16 +3,19 @@
   background-color: $button-background-color;
 }
 .team__cards {
-  // display: flex;
   width: 100%;
+
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team__item {
-  margin-bottom: 30px;
-
   @media screen and (min-width: 1200px) {
     width: calc((100%-60px) / 4);
     margin-right: 30px;
+    margin-bottom: 30px;
     &:last-child {
       margin-right: 0px;
     }
@@ -20,6 +23,17 @@
     &:nth-last-child(-n + 4) {
       margin-bottom: 0px;
     }
+  }
+  @media screen and (min-width: 768px), (max-width: 1199px) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
   }
 }
 
