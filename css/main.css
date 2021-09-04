@@ -555,6 +555,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hidden {
@@ -1457,7 +1459,6 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  max-width: 400px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -2151,7 +2152,6 @@ img {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    padding: 40px;
   }
 }
 
