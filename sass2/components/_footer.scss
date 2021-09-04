@@ -9,7 +9,12 @@
 }
 
 .container-tablet {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px), (max-width: 767px) {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+
+    justify-content: space-between;
   }
 }
 .footer__container {
@@ -68,7 +73,6 @@
 
 .footer-adress {
   @media screen and (min-width: 768px), (max-width: 1199px) {
-    margin-right: 165px;
     display: flex;
     flex-direction: column;
     align-items: center;

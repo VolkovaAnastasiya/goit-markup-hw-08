@@ -514,8 +514,6 @@ html {
 }
 
 .box {
-  width: 480px;
-  height: 320px;
   background-image: url("photo.png");
   background-size: 480px 320px;
 }
@@ -1934,7 +1932,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 468px), (max-width: 767px) {
   .box {
     margin-bottom: 60px;
   }
@@ -2223,6 +2221,21 @@ img {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 480px), (max-width: 767px) {
+  .container-tablet {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2312,7 +2325,6 @@ img {
 
 @media screen and (min-width: 768px), (max-width: 1199px) {
   .footer-adress {
-    margin-right: 165px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
