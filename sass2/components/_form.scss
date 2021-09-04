@@ -1,4 +1,5 @@
 .form {
+  height: 100%;
   padding: 40px;
 }
 .form__text {
@@ -78,17 +79,17 @@
   outline: none;
   cursor: pointer;
   transition: border $transition;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+  }
+
+  &:hover ~ .form__icon,
+  &:focus ~ .form__icon {
+    fill: $accent-color;
+  }
 
   @media screen and (min-width: 480px) {
-    &:hover,
-    &:focus {
-      border: 1px solid $accent-color;
-    }
-
-    &:hover ~ .form__icon,
-    &:focus ~ .form__icon {
-      fill: $accent-color;
-    }
   }
 
   @media screen and (max-width: 1199px) {
