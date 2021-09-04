@@ -513,6 +513,21 @@ html {
           box-sizing: inherit;
 }
 
+.box {
+  width: 480px;
+  height: 320px;
+  background-image: url("photo.png");
+  background-size: 480px 320px;
+}
+
+/* Переопределяем путь к 2x изображению
+   если плотность экрана как минимум 2 */
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .box {
+    background-image: url("photo@2x.png");
+  }
+}
+
 body {
   margin: 0;
   min-width: 320px;
@@ -867,8 +882,8 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Header.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header.jpg);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../image/Header.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../image/Header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -876,28 +891,40 @@ img {
 
 @media screen and (max-width: 480px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Header.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header.jpg);
+    width: 100%;
+  }
+  .hero .hero {
+    background-image: url("../../image/Header.jpg");
+  }
+}
+
+@media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .hero .hero .hero {
+    background-image: url("../../image/Header@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Header@2x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header@2x.jpg);
+  .hero .hero {
+    background-image: url("../../image/Header-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero .hero {
+    background-image: url("../../image/Header-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/Header@3x.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/Header@3x.jpg);
+  .hero .hero {
+    background-image: url("../../image/ImgDesktop-header.jpg");
   }
 }
 
-@media screen and (min-width: 480px) {
-  .hero {
-    width: 100%;
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero .hero {
+    background-image: url("../../image/ImgDesktop-header@2x.jpg");
   }
 }
 
