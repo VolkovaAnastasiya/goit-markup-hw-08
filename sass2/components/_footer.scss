@@ -9,9 +9,6 @@
 }
 
 .container-tablet {
-  // @media screen and (min-width: 768px), (max-width: 1199px) {
-  //   display: flex;
-  // }
   @media screen and (min-width: 480px) {
   }
 }
@@ -63,7 +60,9 @@
     margin-left: auto;
     margin-right: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (max-width: 1199px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -124,12 +123,4 @@
   :focus {
     color: $accent-color;
   }
-}
-@media screen and (min-width: 480px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
 }
