@@ -513,19 +513,6 @@ html {
           box-sizing: inherit;
 }
 
-.box {
-  background-image: url("photo.png");
-  background-size: 480px 320px;
-}
-
-/* Переопределяем путь к 2x изображению
-   если плотность экрана как минимум 2 */
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .box {
-    background-image: url("photo@2x.png");
-  }
-}
-
 body {
   margin: 0;
   min-width: 320px;
@@ -568,8 +555,6 @@ img {
   display: block;
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .hidden {
