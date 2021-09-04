@@ -26,6 +26,11 @@
   &:focus {
     color: $title-text-color;
   }
+
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
+    height: 120px;
+  }
 }
 
 .comment__label {
@@ -35,10 +40,13 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: $primari-text-color;
-  // .form__comment:hover &,
-  // .form__comment:focus & {
-  //   color: $accent-color;
-  // }
+
+  @media screen and (max-width: 1199px) {
+    .form__comment:hover &,
+    .form__comment:focus & {
+      color: $accent-color;
+    }
+  }
 }
 @media screen and (min-width: 480px) {
 }

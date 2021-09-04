@@ -3,10 +3,20 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  min-width: 400px;
+  max-width: 400px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+
+  @media screen and (max-width: 445px) {
+    font-size: 10px;
+    line-height: 1.166;
+  }
 }
 .policy__link {
   color: $accent-color;

@@ -15,42 +15,97 @@
 
 <body>
 
-    <header class="header">
+    <header class="header page-header section">
         <div class="header__container container">
             <nav class="nav">
                 <a class="logo" href="/">
                     <span class="logo__web">Web</span>Studio
+                    
                 </a>
-                <ul class="nav__site">
-                    <li class="nav__item">
-                        <a href="index.html" class="nav__link  current">Студия</a>
-                    </li>
-                    <li class="nav__item"><a href="portfolio.html" class="nav__link ">Портфолио</a></li>
-                    <li class="nav__item"><a href="" class="nav__link link">Контакты</a></li>
-                </ul>
+                
             </nav>
 
-            <ul class="auth ">
-                <li class="auth__item">
-                    <a href="mailto:info@devstudio.com" class="auth__link " aria-label="почта">
-                        <svg class="auth__icon" width="16" height="12">
-                            <use href="./image/icons.svg#icon-envelope" class="icon-mail"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="auth__item">
-                    <a href="tel:+380961111111" class="auth__link" aria-label="телефон">
-                        <svg class="auth__icon" width="10" height="16">
-                            <use href="./image/icons.svg#icon-Vector-1-1"></use>
-                        </svg>+38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+        
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg  width="24" height="24" fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"></path>
+            </svg>
+        </button>
+        
+        <ul class="menu nav__site">
+            <li class="nav__item"><a href="index.html" class="link nav__link  current">Студия</a></li>
+            <li class="nav__item"><a href="portfolio.html" class="link nav__link">Портфолио</a></li>
+            <li class="nav__item"><a href="" class="link nav__link">Контакты</a></li>
+        
+            
+        </ul>
+        <ul class="auth menu">
+            <li class="auth__item">
+                <a href="mailto:info@devstudio.com" class="auth__link link" aria-label="почта">
+                    <svg class="auth__icon" width="16" height="12">
+                        <use href="./image/icons.svg#icon-envelope" class="icon-mail"></use>
+                    </svg>info@devstudio.com
+                </a>
+            </li>
+            <li class="auth__item">
+                <a href="tel:+380961111111" class="auth__link link" aria-label="телефон">
+                    <svg class="auth__icon" width="10" height="16">
+                        <use href="./image/icons.svg#icon-Vector-1-1"></use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+           
+        </ul>
+        
+        
         </div>
 
     </header>
 
     <main>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg  fill="black" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+        
+            <ul class="mobile-menu">
+                
+                <li class="nav__item"><a href="index.html" class="link nav__link  current">Студия</a></li>
+                <li class="nav__item"><a href="portfolio.html" class="link nav__link">Портфолио</a></li>
+                <li class="nav__item"><a href="" class="link nav__link">Контакты</a></li>
+            </ul>
+           <div class=" mobile-auth">
+                <ul class="auth mobile-menu">
+                    <li class="auth__item">
+                        <a href="mailto:info@devstudio.com" class="auth__link link" aria-label="почта">
+                            <svg class="auth__icon" width="16" height="12">
+                                <use href="./image/icons.svg#icon-envelope" class="icon-mail"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="auth__item">
+                        <a href="tel:+380961111111" class="auth__link link" aria-label="телефон">
+                            <svg class="auth__icon" width="10" height="16">
+                                <use href="./image/icons.svg#icon-Vector-1-1"></use>
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
+                    <ul class="mobile-item mobile-menu">
+                        <a class="mobile-link">Instagram</a>
+                        <a class="mobile-link">Twitter</a>
+                        <a class="mobile-link">Facebook</a>
+                        <a class="mobile-link">Linkedin</a>
+                    </ul>
+                </ul>
+           </div>
+            
+        </div>
         <!--Герой-->
 
         <section class="hero">
@@ -510,6 +565,11 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/menu.js"></script> -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
 </body>
 
 </html>

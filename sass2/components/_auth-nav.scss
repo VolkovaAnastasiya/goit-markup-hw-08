@@ -1,22 +1,40 @@
 .auth {
   // display: flex;
-  align-items: center;
+
   margin-left: auto;
   @media screen and (min-width: 480px) {
   }
 
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
   }
 
   @media screen and (min-width: 1200px) {
+    flex-direction: unset;
   }
 }
 
 .auth__item {
   // display: flex;
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -30,13 +48,44 @@
   line-height: 1.33;
   letter-spacing: 0.02em;
 
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color $transition;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+
+    .auth__icon {
+      display: none;
+    }
+
+    &:focus {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.175;
+      letter-spacing: 0.02em;
+      color: $accent-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.166;
+
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

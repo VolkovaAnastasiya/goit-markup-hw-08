@@ -11,7 +11,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    margin-left: auto;
+    margin: 0 0 auto auto;
   }
 }
 .mail__box {
@@ -25,7 +25,7 @@
 
 .mail__input {
   padding: 15px 16px;
-  margin: 0 0 20px 0;
+
   margin-left: auto;
   margin-right: auto;
   outline: none;
@@ -43,18 +43,18 @@
   background-color: $hero-background-color;
   color: rgba(255, 255, 255, 0.6);
 
+  @media screen and (min-width: 480px), (max-width: 1199px) {
+    width: 450px;
+    margin: 0 auto 20px auto;
+  }
   @media screen and (max-width: 479px) {
     width: 100%;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 450px;
   }
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     width: 358px;
-    margin-right: 12px;
+    margin: 0 12px 0 0;
   }
 }
 

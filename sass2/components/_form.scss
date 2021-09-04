@@ -40,7 +40,7 @@
 
 .form__field,
 .form__comment {
-  // display: flex;
+  display: flex;
   flex-direction: column;
   text-align: left;
   color: $title-text-color;
@@ -60,10 +60,12 @@
   color: $primari-text-color;
   transition: color $transition;
 
-  // .form__field:hover &,
-  // .form__field:focus & {
-  //   color: $accent-color;
-  // }
+  @media screen and (max-width: 767px) {
+    .form__field:hover &,
+    .form__field:focus & {
+      color: $accent-color;
+    }
+  }
 }
 
 .form__input {
@@ -77,14 +79,31 @@
   cursor: pointer;
   transition: border $transition;
 
-  &:hover,
-  &:focus {
-    border: 1px solid $accent-color;
+  @media screen and (min-width: 480px) {
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+
+    &:hover ~ .form__icon,
+    &:focus ~ .form__icon {
+      fill: $accent-color;
+    }
   }
 
-  &:hover ~ .form__icon,
-  &:focus ~ .form__icon {
-    fill: $accent-color;
+  @media screen and (max-width: 1199px) {
+    max-width: 370px;
+    height: 40px;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $accent-color;
+    }
+
+    &:hover ~ .form__icon,
+    &:focus ~ .form__icon {
+      fill: $accent-color;
+    }
   }
 }
 
