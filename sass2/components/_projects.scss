@@ -1,10 +1,9 @@
 .projects {
-  margin: -15px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+    margin: -15px;
   }
 }
 
@@ -57,15 +56,17 @@
 }
 
 .projects__item {
-  display: block;
   margin: 15px;
   @media screen and (min-width: 480px) {
-    width: 100%;
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
   @media screen and (min-width: 768px) {
+    display: block;
     width: calc((100% - 4 * 15px) / 2);
     &:nth-last-child(-n + 1) {
-      margin-bottom: 0px;
     }
   }
 

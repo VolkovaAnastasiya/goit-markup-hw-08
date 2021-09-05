@@ -15,22 +15,13 @@
     transform: translate(-50%, -50%) scale(0.9);
   }
 
-  &:hover {
-    border: 1px solid $accent-color;
-  }
-
-  // @media screen and(max-width:479px) {
-  //   width: ;
-  // }
-
-  @media screen and(min-width:320px) {
+  @media screen and(max-width:479px) {
     width: 100vw;
     max-height: 100vh;
   }
 
   @media screen and (min-width: 480px) {
     width: 460px;
-    max-height: 100vh;
   }
 
   @media screen and (min-width: 1200px) {
@@ -66,7 +57,4 @@
   &:hover {
     border: 1px solid $accent-color;
   }
-}
-
-@media screen and (min-width: 768px) {
 }
